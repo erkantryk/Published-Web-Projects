@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>ROTA 14</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color:#1265A9;
+    font-size: 50px;
+  }
+  .logo {
+    color: #1265A9;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #2C4E68;
+  }
+  .carousel-indicators li {
+    border-color:  #2C4E68;
+    background-color: #2C4E68;
+  }
+  .carousel-indicators li.active {
+    background-color:  #E3BF51;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .item span {
+    font-style: normal;
+  }
+ 
+  .navbar {
+    margin-bottom: 0;
+    background-color: #2C4E68;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #2C4E68 !important;
+    background-color: #E3BF51 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #E3BF51;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .showcase{
+    font-weight: bolder;
+    color: rgb(100, 94, 0);
+    font-size: 1.8rem;
+    font-style: bolder;
+    padding-top: 720px;
+}
+#baslik{
+    background-image: url(/Eklentiler/showcase.jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.baslikBackground{
+    width: 100%;
+    align-items: center;
+  }
+
+.footer{
+  background-color: #2C4E68;
+  color:  #E3BF51;
+}
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">ROTA 14</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">ANASAYFA</a></li>
+        <li><a href="#about">HAKKIMIZDA</a></li>
+        <li><a href="#services">FAALİYETLER</a></li>
+        <li><a href="#documents">BELGELER</a></li>
+        <li><a href="#gallery">GALERİ</a></li>
+        <li><a href="#contact">İLETİŞİM</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Showcase -->
+
+<section id="baslik">
+    <div class="baslikBackground">
+        <div class="showcase">
+            
+        </div>
+    </div>
+</section>
+
+<!-- Hakkımızda -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>HAKKIMIZDA</h2><br>
+      <h4>2013 yılında (Rota İnşaat) şahıs firması olarak faaliyetlerine başlayan firmamız 2015 yılında Rota14 Limited Şirket olarak unvan değişikliği yaparak faaliyetlerine devam etmiştir ve devam etmektedir. Faaliyet alanı olarak her ne kadar inşaat üzerine yoğunlaşılsa da farklı alanlarda da girişimlerde bulunulmuştur. Halihazırda inşaat, makine ve ithalat/ihracat faaliyetlerine devam edilmektedir. </h4><br>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>DEĞERLERİMİZ</h2><br>
+      <h4><strong>MİSYONUMUZ:</strong> Ülke ekonomisine katkıda bulunmak ve istihdam sağlamak.</h4><br>
+      <h4><strong>VİZYONUMUZ:</strong> İthalat/ihracat, inşaat ve makine alanlarında partner firmalarımıza çözüm ortağı olmak ve daha fazla istihdam yaratmak.</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Faaliyetler -->
+<div id="services" class="container-fluid text-center">
+  <h2>FAALİYETLERİMİZ</h2>
+  <h4>Neler yapıyoruz</h4>
+  <br>
+ 
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>DEZENFEKTAN MAKİNELERİ</h4>
+      <p>Dezenfekte kabini üretimi</p>
+      <iframe width="500" height="281" src="https://www.youtube.com/embed/VLJL1DyOgto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   
+    <div class="col-sm-4">
+      <span class="glyphicon  glyphicon-heart logo-small"></span>
+      <h4>DEZENFEKTAN ÜRÜNLERİ</h4>
+      <p>Maske, eldiven vb. ürünlerin satışı</p>
+      <br>
+      <img src="/Eklentiler/maske.png" alt="maske-resmi">
+    </div>
+
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>İNŞAAT</h4>
+      <p>İnşaat yapımı</p>
+      <br>
+      <img src="/Eklentiler/inşaat.png" alt="inşaat-resmi">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Belgeler -->
+<div id="documents" class="container-fluid text-center bg-grey">
+
+  <h2>BELGELERİMİZ</h2><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <embed src="/Eklentiler/Belgeler/20050501-ROTA14-İNŞAAT-13485.pdf" type="application/pdf" height="300px" width="100%">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <embed src="/Eklentiler/Belgeler/20050502-ROTA14-İNŞAAT-9001.pdf" type="application/pdf" height="300px" width="100%">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <embed src="/Eklentiler/Belgeler/20050503-ROTA14-İNŞAAT-CE-UYGUNLUK-BELGESİ.pdf" type="application/pdf" height="300px" width="100%">
+      </div>
+    </div>
+  </div><br>
+</div>
+  
+  
+<div id="gallery" class="container-fluid text-center">
+  <h2>GALERİ</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+      <li data-target="#myCarousel" data-slide-to="9"></li>
+    </ol>
+
+    <!-- Fotoğraflar -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4><img src="/Eklentiler/Galeri/1.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/2.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/3.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/4.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/5.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/6.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/7.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/8.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/9.jpg" alt="foto"></h4>
+      </div>
+      <div class="item">
+        <h4><img src="/Eklentiler/Galeri/10.jpg" alt="foto"></h4>
+      </div>
+
+
+    </div>
+
+    <!-- Kontroller -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- İletişim -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">İLETİŞİM</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Aydın Şahin</p><br>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Turkey, TR</p><br>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Sümer Mahallesi Necip Fazıl Kısakürek Bulvarı Kahraman Apartmanı No:25/A-B MERKEZ / BOLU</p><br>
+      <p><span class="glyphicon glyphicon-phone"></span> 03742409999</p><br>
+      <p><span class="glyphicon glyphicon-phone"></span> 05496617682</p><br>
+      <p><span class="glyphicon glyphicon-phone"></span> 05468211970</p><br>
+      <p><span class="glyphicon glyphicon-envelope"></span> aydin_sahin06@hotmail.com</p>
+      
+    </div>
+    <div class="col-sm-7 slideanim">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1511.669035650452!2d31.608166!3d40.732586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQzJzU3LjIiTiAzMcKwMzYnMjkuNiJF!5e0!3m2!1str!2sus!4v1607199901336!5m2!1str!2sus" width="800px" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer class="container-fluid text-center footer">
+  <a href="#myPage" title="Yukarı Çık">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>© 2013 ROTA 14 </p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+   
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    }
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
